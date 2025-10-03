@@ -600,26 +600,6 @@
 					<p class="text-surface-600 dark:text-surface-400 text-lg mb-6">
 						Klik pada profil siswa untuk memulai monitoring sensor
 					</p>
-
-					<div class="flex justify-center gap-4">
-						<button
-							class="btn preset-outlined-surface-600 hover:scale-105 flex items-center gap-2"
-							onclick={manageProfiles}
-						>
-							<GraduationCap class="w-4 h-4" />
-							Kelola Profil
-						</button>
-
-						{#if selectedStudent}
-							<button
-								class="btn preset-filled-primary-500 hover:scale-105 flex items-center gap-2"
-								onclick={continueToDrum}
-							>
-								Lanjut ke Container
-								<ChevronRight class="w-4 h-4" />
-							</button>
-						{/if}
-					</div>
 				</div>
 
 				<!-- Student Profiles Grid -->

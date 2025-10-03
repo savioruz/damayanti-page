@@ -16,9 +16,9 @@
 		isMobileMenuOpen = false;
 	}
 
-    function handleLogin() {
-        goto('/login');
-    }
+	function handleLogin() {
+		goto('/login');
+	}
 </script>
 
 <header
@@ -68,6 +68,13 @@
 
 		<!-- Mobile Menu Controls -->
 		<div class="flex items-center gap-2 md:hidden">
+			<button
+				onclick={handleLogin}
+				class="flex items-center gap-2 px-3 py-2 rounded-lg transition-colors hover:bg-surface-200 dark:hover:bg-surface-700"
+				aria-label="Toggle theme"
+			>
+				<LogIn class="w-5 h-5" />
+			</button>
 			<ModeToggle />
 			<button
 				onclick={toggleMobileMenu}
